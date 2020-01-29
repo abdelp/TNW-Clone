@@ -48,7 +48,7 @@
 .events{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 200px 200px;
+    grid-template-rows: repeat(2, 38vh);
     grid-gap: 5px;
 }
 
@@ -59,7 +59,7 @@
     background-size: 100% 100%;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 15px;
     justify-content: space-between;
 }
 
@@ -68,7 +68,10 @@
     grid-column: 2;
     background: rgba(0,0,0,.25) url(https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2019%2F05%2Fstellar-blockchain-down-cryptocurrency-decentralized.jpg&signature=47f9f5964c3bae77d160cd536706e64c) no-repeat;
     background-size: 100% 100%;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    justify-content: flex-end;
 }
 
 .event3{
@@ -76,7 +79,10 @@
     grid-column: 2;
     background: rgba(0,0,0,.25) url(https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F01%2Fheader-image-tim-cook-Apple-financials-1.png&signature=b99870d503faa8eefb0f467ad99ab2c2) no-repeat;
     background-size: 100% 100%;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    justify-content: flex-end;
 }
 
 .logo{
@@ -86,7 +92,7 @@
 }
 
 .website-logo{
-    height:125px;
+    height:100px;
 }
 
 .event-data h5,
@@ -94,11 +100,18 @@
 .event-author li {
     font-family: 'Poppins', sans-serif;
     color: white;
+
 }
 
-.event-data h2 {
+.main-event .event-data h2 {
     font-weight: 700;
     font-size: 50px;
+}
+
+.event2 .event-data h2,
+.event3 .event-data h2 {
+    font-weight: 700;
+    font-size: 25px;
 }
 
 .event-author {
@@ -106,8 +119,48 @@
     font-size: 12px;
     font-weight: 300;
     align-items: center;
+    margin-top: 12px;
 }
 
 .event-author > li {
     display: inline-block;
+    padding-right: 5px;
+}
+
+.small-icon{
+    width:20px;
+    height: 20px;
+}
+
+.latest-section{
+    padding: 50px;
+}
+
+.latest-news{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 38vh);
+    grid-gap: 10px;
+}
+
+.latest-news > div > img {
+    width: 100%;
+}
+
+.latest-news > div > h5 {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.latest-news > div > ul > li{
+    display: inline-block;
+    color: grey;
+    font-size: 13px;
+}
+
+.latest-news > div > ul > li:nth-of-type(1):after {
+    content: "\B7";
+    display: block;
+    float: right;
+    margin: 0 4px;
 }
