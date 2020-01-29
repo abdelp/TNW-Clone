@@ -35,3 +35,58 @@
     width: 20px;
     height: 20px;
 }
+
+.ticket-sell{
+    background-color: #fd3;
+    padding: 5px;
+}
+
+.main-section{
+    height: 1000px;
+}
+
+.events{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 200px 200px;
+    grid-gap: 5px;
+}
+
+.main-event{
+    grid-row: 1 / span 2;
+    grid-column: 1;
+    background: rgba(0,0,0,.25) url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/newfakenews1200-796x417.png) no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    padding: 20px;
+}
+
+.event2{
+    grid-row: 1;
+    grid-column: 2;
+    background: rgba(0,0,0,.25) url(https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2019%2F05%2Fstellar-blockchain-down-cryptocurrency-decentralized.jpg&signature=47f9f5964c3bae77d160cd536706e64c) no-repeat;
+    background-size: 100% 100%;
+    display: block;
+}
+
+.event3{
+    grid-row: 2;
+    grid-column: 2;
+    background: rgba(0,0,0,.25) url(https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F01%2Fheader-image-tim-cook-Apple-financials-1.png&signature=b99870d503faa8eefb0f467ad99ab2c2) no-repeat;
+    background-size: 100% 100%;
+    display: block;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.logo > *{
+    padding: 20px;
+}
+
+.website-logo{
+    height:125px;
+}
