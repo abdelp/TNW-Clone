@@ -200,6 +200,7 @@
     font-size: 16px;
     color: #f42;
     font-family: 'Poppins', sans-serif;
+    padding: 10px;
 }
 
 .title-container > ul > li:after {
@@ -209,4 +210,88 @@
     display: inline-block;
     pointer-events: none;
     position: absolute;
+}
+
+.fundings-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+}
+
+.funding{
+    position: relative;
+    width: 200px;
+    height: 400px;
+}
+
+.funding > img {
+    position: absolute;
+    width: 60px;
+    height: 90px;
+    top: 0%;
+    left: 4%;
+}
+
+.funding > * {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.funding > h4 {
+  background-color: rgb(255, 68, 34);
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  padding-left: 84px;
+}
+
+
+
+.funding > div:nth-of-type(1) {
+    background-color: rgba(255, 68, 34, 0.08);
+}
+
+.funding > div:nth-of-type(1) > * {
+    padding-left: 84px;
+}
+
+.funding > div:nth-of-type(1) > h4 {
+    color: black;
+    font-size: 20px;
+    font-weight:700;
+}
+
+.funding > div:nth-of-type(1) > h5 {
+    color: rgb(85, 85, 85);
+    font-size: 12px;
+    font-weight:400;
+}
+
+.funding > div:nth-of-type(2){
+    border-bottom-color: rgba(255, 68, 34, 0.08);
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+}
+
+
+.funding > div:nth-of-type(2) > * {
+    font-size: 15px;
+    color: rgb(85, 85, 85);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.funding > div:nth-of-type(3) > a {
+    font-size: 12px;
+    color: rgb(85, 85, 85);
+}
+
+.funding > div:nth-of-type(3) > span {
+    font-size: 12px;
+    color: rgb(170, 170, 170);;
+}
+
+.bookmark-icon{
+    width: 15px;
+    height: 15px;
 }
