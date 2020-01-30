@@ -470,7 +470,7 @@
 }
 
 .footer{
-    background-color: black;
+    background-color:rgb(29,29,29);
     color: white;
 }
 
@@ -489,13 +489,21 @@
 .top-footer > ul {
     display: flex;
     justify-content: center;
+    color: rgb(95,95,95);
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.top-footer > ul > li {
+    display: inline-block;
+    margin-right: 10px;
 }
 
 .top-footer > ul:first-of-type > li {
-    display: inline-block;
     height: 40px;
     width: 40px;
     background-color: #333;
     border-radius: 50%;
-    margin-right: 10px;
+    margin-bottom: 1.5em;
 }
