@@ -464,3 +464,18 @@
     font-family: 'Poppins', sans-serif;
     margin-top: 10px;
 }
+
+.last-price{
+    text-decoration: line-through;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    height: 100px;
+}
+
+.facebook-icon{
+    width: 16px;
+    height: 16px;
+}
