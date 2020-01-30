@@ -133,12 +133,14 @@
 }
 
 .middle-sections{
-    padding: 20px;
+    padding: 5px;
+    max-width: 1176px;
+    margin: 0 auto;
 }
 
 .latest-section,
 .funding-rounds {
-    padding: 50px;
+    padding: 5px;
 }
 
 .latest-section > h2,
@@ -317,13 +319,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .topic {
     padding: 8px;
-
 }
 
 .topic-title {
