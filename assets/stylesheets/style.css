@@ -132,6 +132,10 @@
     height: 20px;
 }
 
+.middle-sections{
+    padding: 20px;
+}
+
 .latest-section,
 .funding-rounds {
     padding: 50px;
@@ -220,7 +224,7 @@
 
 .funding{
     position: relative;
-    width: 200px;
+    width: 100%;
     height: 400px;
 }
 
@@ -268,8 +272,8 @@
 }
 
 .funding > div:nth-of-type(2){
-    border-bottom-color: rgba(255, 68, 34, 0.08);
-    border-bottom-width: 2px;
+    border-bottom-color: rgba(255,68,34,.25);
+    border-bottom-width: 1px;
     border-bottom-style: solid;
 }
 
@@ -282,16 +286,28 @@
 }
 
 .funding > div:nth-of-type(3) > a {
-    font-size: 12px;
+    font-size: 13px;
     color: rgb(85, 85, 85);
+    display: block;
 }
 
-.funding > div:nth-of-type(3) > span {
-    font-size: 12px;
+.funding > div:nth-of-type(3) > a > span {
+    font-size: 13px;
     color: rgb(170, 170, 170);;
 }
 
+.funding > div:nth-of-type(2) > *,
+.funding > div:nth-of-type(3) > * {
+    padding-left:14px;
+    padding-right: 14px;
+}
+
 .bookmark-icon{
+    width: 15px;
+    height: 15px;
+}
+
+.briefcase-icon{
     width: 15px;
     height: 15px;
 }
