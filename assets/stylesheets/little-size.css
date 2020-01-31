@@ -1,10 +1,9 @@
 @media (max-width: 766px) {
-    
+
     .header {
         display: flex;
     }
-    
-    
+
     .navbar-header {
         display: none;
     }
@@ -14,7 +13,7 @@
         justify-content: flex-end;
         padding: 5px;
     }
-    
+
     .topics-ul {
         display: none;
     }
@@ -46,8 +45,12 @@
         justify-content: space-between;
     }
 
-    .main-event > h2 {
+    .main-event .event-data h2 {
         font-size: 25px;
+    }
+
+    .website-logo {
+        display: none;
     }
 
     .event2 {

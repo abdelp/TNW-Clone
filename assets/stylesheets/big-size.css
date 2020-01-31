@@ -40,7 +40,12 @@
         padding: 15px;
         justify-content: space-between;
     }
-    
+
+    .main-event .event-data h2 {
+        font-weight: 700;
+        font-size: 50px;
+    }
+
     .event2 {
         grid-row: 1;
         grid-column: 2;

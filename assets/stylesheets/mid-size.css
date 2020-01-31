@@ -40,6 +40,14 @@
         padding: 15px;
         justify-content: space-between;
     }
+
+    .main-event .event-data h2 {
+        font-size: 25px;
+    }
+
+    .website-logo {
+        display: none;
+    }
     
     .event2 {
         grid-row: 1;
