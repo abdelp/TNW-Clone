@@ -21,7 +21,7 @@ It is the clone of https://thenextweb.com/ page
 
 ## Live Demo
 
-[Live Demo](https://rawcdn.githack.com/abdelp/building-with-responsive-design/d18a0d4529223fc1ae000068ab92e414465bb50c/index.html)
+[Live Demo](https://rawcdn.githack.com/abdelp/building-with-responsive-design/85ee5ed8c3826c7f5b726275400ac3c7a864f938/index.html)
 
 ## Authors
 
