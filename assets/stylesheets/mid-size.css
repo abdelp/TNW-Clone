@@ -87,6 +87,12 @@
     margin-bottom: 8px;
   }
 
+  .title-container {
+    display: flex;
+    flex-direction: horizontal;
+    justify-content: space-between;
+  }
+
   .fundings-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -123,5 +129,10 @@
     background: linear-gradient(to bottom right, #c09, #f42 85%);
     width: 80px;
     height: 80px;
+  }
+
+  .tnw > img {
+    width: 90%;
+    margin-top: 30px;
   }
 }

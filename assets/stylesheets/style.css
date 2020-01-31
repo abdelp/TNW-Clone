@@ -54,9 +54,22 @@
   padding: 3px;
 }
 
+.tnw:hover {
+  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/home-1.gif) no-repeat;
+}
+
 .topics-ul > li:hover {
   color: black;
   cursor: pointer;
+}
+
+.topic-header > div > *:hover {
+  cursor: pointer;
+}
+
+.topic-list > li:hover {
+  cursor: pointer;
+  color: black;
 }
 
 .navbar-header > ul > li:hover {
@@ -102,8 +115,14 @@
   padding-bottom: 15px;
 }
 
-.events > *:hover {
+.funding > h4:hover,
+.funding > img:hover,
+.funding > div > *:hover {
   cursor: pointer;
+}
+
+.funding > div:nth-of-type(2) > *:hover {
+  color: black;
 }
 
 .logo {
@@ -171,7 +190,7 @@
   width: 60px;
   height: 90px;
   top: 0%;
-  left: 4%;
+  left: 15px;
 }
 
 .title-container > ul {
@@ -185,6 +204,10 @@
 .topic-header > div ul {
   display: flex;
   font-weight: 300;
+}
+
+.events > *:hover {
+  cursor: pointer;
 }
 
 .topic-header > div > h5,
@@ -223,11 +246,6 @@
   display: block;
   float: right;
   margin: 0 4px;
-}
-
-.title-container {
-  display: flex;
-  justify-content: space-between;
 }
 
 .funding {
@@ -438,6 +456,16 @@
   margin-bottom: 1.5em;
 }
 
+.top-footer > ul:first-of-type > li:hover {
+  background-color: rgb(17, 17, 17);
+  cursor: pointer;
+}
+
+.top-footer > ul:nth-of-type(2) > li:hover {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
 .bottom-footer {
   background-color: black;
   padding-bottom: 25px;
@@ -448,6 +476,12 @@
   height: 9px;
 }
 
+.footer-legal-logo:hover {
+  cursor: pointer;
+}
+
 .bottom-footer > ul > li > b {
   color: #f42;
 }
+
+

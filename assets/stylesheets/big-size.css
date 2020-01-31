@@ -82,6 +82,11 @@
     margin-bottom: 8px;
   }
 
+  .title-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .fundings-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

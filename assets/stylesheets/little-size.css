@@ -96,6 +96,12 @@
     flex: 4;
   }
 
+  .title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   .fundings-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -145,5 +151,10 @@
     width: 80px;
     height: 80px;
     max-height: 42px;
+  }
+  
+  .tnw > img {
+    width: 90%;
+    margin-top: 12px;
   }
 }
