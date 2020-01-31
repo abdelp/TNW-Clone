@@ -2,6 +2,8 @@
 
 Web Page Clone of The Next Web, a tech-focused magazine which uses media queries to gracefully degrade their site as the window size is reduced.
 
+![screenshot](screenshot.png)
+
 # HTML Form
 
 Sixth Microverse HTML and CSS Project
