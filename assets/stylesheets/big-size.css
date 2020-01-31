@@ -12,6 +12,11 @@
         justify-content: space-between;
         background-color: #131313;
     }
+
+    .navbar-header > ul > li:hover{
+        color: lightgrey;
+        cursor: pointer;
+    }
     
     .left-ul>li,
     .right-ul>li {
@@ -32,15 +37,28 @@
         padding: 10px;
         color: #aaa;
     }
+
+    .topics-ul > li:hover{
+        color: black;
+        cursor: pointer;
+    }
     
     .search-btn{
         background-color: transparent;
         height: 100%;
+        fill: #ABABAB;
     }
 
-    menu-btn{
+    .menu-btn{
         display: none;
     }
+
+    .search-btn:hover{
+        cursor:pointer;
+        fill: rgb(85, 85, 85);
+    }
+
+    
     
     .search-icon, .menu-icon {
         width: 20px;
@@ -59,8 +77,12 @@
     .events {
         display: grid;
         grid-template-columns: 2fr 1fr;
-        grid-template-rows: repeat(2, 38vh);
+        grid-template-rows: repeat(2, 225px);
         grid-gap: 5px;
+    }
+
+    .events > *:hover{
+        cursor: pointer;
     }
     
     .main-event {
@@ -160,6 +182,12 @@
         font-weight: 700;
         margin-bottom: 24px;
     }
+
+    .latest-section>h2:hover,
+    .title-container>*:hover{
+        cursor: pointer;
+        color: black;
+    }
     
     .card-container {
         display: grid;
@@ -175,6 +203,13 @@
     .card-container>div>img {
         width: 100%;
         margin-bottom: 8px;
+    }
+
+    .card-container>div>img:hover,
+    .card-info>h5:hover{
+        cursor: pointer;
+        text-decoration: underline;
+        color: #f42;
     }
     
     .card-info > h5 {
