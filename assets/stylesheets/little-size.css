@@ -191,7 +191,8 @@
     }
 
     .latest-section>h2:hover,
-    .title-container>*:hover{
+    .title-container>*:hover,
+    .title-container>ul>li:hover{
         cursor: pointer;
         color: black;
     }
