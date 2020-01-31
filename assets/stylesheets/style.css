@@ -6,10 +6,9 @@
     width: 100%;
 }
 
-.navbar-header {
-    display: flex;
-    justify-content: space-between;
-    background-color: #131313;
+.navbar-header > ul > li:hover{
+    color: lightgrey;
+    cursor: pointer;
 }
 
 .left-ul>li,
@@ -20,27 +19,28 @@
     font-size: 13px;
 }
 
-.navbar-section {
-    display: flex;
-    justify-content: space-between;
-    padding: 5px;
+.topics-ul > li:hover{
+    color: black;
+    cursor: pointer;
 }
 
-.topics-ul>li {
-    display: inline-block;
-    padding: 10px;
-    color: #aaa;
-}
 
-.search-btn, .menu-btn {
+.search-btn {
+    fill: #ABABAB;
     background-color: transparent;
     height: 100%;
+}
+
+.search-btn:hover{
+    cursor:pointer;
+    fill: rgb(85, 85, 85);
 }
 
 .search-icon, .menu-icon {
     width: 20px;
     height: 20px;
 }
+
 
 .ticket-sell {
     background-color: #fd3;
@@ -51,44 +51,12 @@
     height: 1000px;
 }
 
-.events {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: repeat(2, 38vh);
-    grid-gap: 5px;
+.events  * {
+    max-width: 100%;
 }
 
-.main-event {
-    grid-row: 1 / span 2;
-    grid-column: 1;
-    background: linear-gradient(360deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.05085784313725494) 100%), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/newfakenews1200-796x417.png) no-repeat;
-    background-size: 100% 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    justify-content: space-between;
-}
-
-.event2 {
-    grid-row: 1;
-    grid-column: 2;
-    background: linear-gradient(360deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.05085784313725494) 100%), url(https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2019%2F05%2Fstellar-blockchain-down-cryptocurrency-decentralized.jpg&signature=47f9f5964c3bae77d160cd536706e64c) no-repeat;
-    background-size: 100% 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    justify-content: flex-end;
-}
-
-.event3 {
-    grid-row: 2;
-    grid-column: 2;
-    background: linear-gradient(360deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.05085784313725494) 100%), url(https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F01%2Fheader-image-tim-cook-Apple-financials-1.png&signature=b99870d503faa8eefb0f467ad99ab2c2) no-repeat;
-    background-size: 100% 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    justify-content: flex-end;
+.events > *:hover{
+    cursor: pointer;
 }
 
 .logo {
@@ -156,38 +124,36 @@
     margin-bottom: 24px;
 }
 
-.card-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, auto);
-    grid-gap: 10px;
+.latest-section>h2:hover,
+.title-container>*:hover,
+.title-container>ul>li:hover{
+    cursor: pointer;
+    color: black;
 }
 
-.card-container>div {
-    padding: 12px;
+.card-container>div>img:hover,
+.card-info>h5:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #f42;
 }
 
-.card-container>div>img {
-    width: 100%;
-    margin-bottom: 8px;
-}
-
-.card-container>div>h5 {
+.card-info > h5 {
     font-weight: 700;
     font-size: 16px;
 }
 
-.card-container>div>ul {
+.card-info > ul {
     padding-top: 4px;
 }
 
-.card-container>div>ul>li {
+.card-info > ul > li {
     display: inline-block;
     color: grey;
     font-size: 13px;
 }
 
-.card-container>div>ul>li:nth-of-type(1):after {
+.card-info > ul > li:nth-of-type(1):after {
     content: "\B7";
     display: block;
     float: right;
@@ -219,12 +185,6 @@
     position: absolute;
 }
 
-.fundings-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
-}
-
 .funding {
     position: relative;
     width: 100%;
@@ -251,9 +211,6 @@
     font-weight: 700;
     padding-left: 84px;
 }
-
-
-
 .funding>div:nth-of-type(1) {
     background-color: rgba(255, 68, 34, 0.08);
 }
@@ -294,11 +251,10 @@
     color: rgb(85, 85, 85);
     display: block;
 }
-
 .funding>div:nth-of-type(3)>a>span {
     font-size: 13px;
     color: rgb(170, 170, 170);
-    ;
+    
 }
 
 .funding>div:nth-of-type(2)>*,
@@ -312,17 +268,10 @@
     height: 15px;
 }
 
+
 .briefcase-icon {
     width: 15px;
     height: 15px;
-}
-
-.topics-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
 }
 
 .topic {
@@ -339,7 +288,6 @@
     font-weight: 700;
     text-decoration: none;
 }
-
 #topic-1 {
     background: linear-gradient(360deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.05085784313725494) 100%), url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/06/moviepass-796x419.png') no-repeat;
     background-size: 100% 100%;
@@ -491,20 +439,6 @@
     margin-top: 12px;
 }
 
-.top-footer>ul,
-.bottom-footer>ul {
-    display: flex;
-    justify-content: center;
-    color: rgb(95, 95, 95);
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.top-footer>ul>li {
-    display: inline-block;
-    margin-right: 10px;
-}
-
 .top-footer>ul:first-of-type>li {
     height: 40px;
     width: 40px;
@@ -525,61 +459,4 @@
 
 .bottom-footer>ul>li>b {
     color: #f42;
-}
-
-
-
-@media (max-width: 1074px) {
-    .header {
-        display: flex;
-    }
-
-    .tnw {
-        background-color: #f42;
-        background: linear-gradient(to bottom right, #c09, #f42 85%);
-        width: 80px;
-        height: 80px;
-    }
-
-    .navbar-section {
-        justify-content: flex-end;
-    }
-
-    .topics-ul {
-        display: none;
-    }
-}
-
-@media (max-width: 766px) {
-    .navbar-header {
-        display: none;
-    }
-
-    .tnw {
-        max-height: 42px;
-    }
-
-    .events {
-        grid-template-columns: 1fr;
-        grid-auto-rows: auto;
-        grid-template-rows: repeat(3, 38vh);
-    }
-
-    .main-event {
-        grid-row: 1;
-    }
-
-    .main-event > h2 {
-        font-size: 25px;
-    }
-
-    .event2 {
-        grid-row: 2;
-        grid-column: 1;
-    }
-
-    .event3 {
-        grid-row: 3;
-        grid-column: 1;
-    }
 }

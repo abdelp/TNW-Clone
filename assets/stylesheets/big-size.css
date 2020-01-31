@@ -1,11 +1,5 @@
 @media (min-width: 1075px){
-    * {
-        font-family: 'Poppins', sans-serif;
-    }
     
-    .navbar{
-        width: 100%;
-    }
     
     .navbar-header {
         display: flex;
@@ -13,19 +7,6 @@
         background-color: #131313;
     }
 
-    .navbar-header > ul > li:hover{
-        color: lightgrey;
-        cursor: pointer;
-    }
-    
-    .left-ul>li,
-    .right-ul>li {
-        display: inline-block;
-        padding: 10px;
-        color: hsla(0, 0%, 100%, .6);
-        font-size: 13px;
-    }
-    
     .navbar-section {
         display: flex;
         justify-content: space-between;
@@ -38,42 +19,10 @@
         color: #aaa;
     }
 
-    .topics-ul > li:hover{
-        color: black;
-        cursor: pointer;
-    }
-    
-    .search-btn{
-        background-color: transparent;
-        height: 100%;
-        fill: #ABABAB;
-    }
-
     .menu-btn{
         display: none;
     }
 
-    .search-btn:hover{
-        cursor:pointer;
-        fill: rgb(85, 85, 85);
-    }
-
-    
-    
-    .search-icon, .menu-icon {
-        width: 20px;
-        height: 20px;
-    }
-    
-    .ticket-sell {
-        background-color: #fd3;
-        padding: 5px;
-    }
-    
-    .main-section {
-        height: 1000px;
-    }
-    
     .events {
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -81,10 +30,6 @@
         grid-gap: 5px;
     }
 
-    .events > *:hover{
-        cursor: pointer;
-    }
-    
     .main-event {
         grid-row: 1 / span 2;
         grid-column: 1;
@@ -118,78 +63,6 @@
         justify-content: flex-end;
     }
     
-    .logo {
-        display: flex;
-        justify-content: space-between;
-        color: white;
-    }
-    
-    .website-logo {
-        height: 100px;
-    }
-    
-    .event-data h5,
-    .event-data h2,
-    .event-author li {
-        color: white;
-    
-    }
-    
-    .main-event .event-data h2 {
-        font-weight: 700;
-        font-size: 50px;
-    }
-    
-    .event2 .event-data h2,
-    .event3 .event-data h2 {
-        font-weight: 700;
-        font-size: 25px;
-    }
-    
-    .event-author {
-        display: flex;
-        font-size: 12px;
-        font-weight: 300;
-        align-items: center;
-        margin-top: 12px;
-    }
-    
-    .event-author>li {
-        display: inline-block;
-        padding-right: 5px;
-    }
-    
-    .small-icon {
-        width: 20px;
-        height: 20px;
-    }
-    
-    .middle-sections {
-        padding: 5px;
-        max-width: 1176px;
-        margin: 0 auto;
-    }
-    
-    .latest-section,
-    .funding-rounds {
-        padding: 5px;
-    }
-    
-    .latest-section>h2,
-    .title-container>h2 {
-        color: #f42;
-        font-size: 28px;
-        font-weight: 700;
-        margin-bottom: 24px;
-    }
-
-    .latest-section>h2:hover,
-    .title-container>*:hover,
-    .title-container>ul>li:hover{
-        cursor: pointer;
-        color: black;
-    }
-    
     .card-container {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -206,157 +79,18 @@
         margin-bottom: 8px;
     }
 
-    .card-container>div>img:hover,
-    .card-info>h5:hover{
-        cursor: pointer;
-        text-decoration: underline;
-        color: #f42;
-    }
-    
-    .card-info > h5 {
-        font-weight: 700;
-        font-size: 16px;
-    }
-    
-    .card-info > ul {
-        padding-top: 4px;
-    }
-    
-    .card-info > ul > li {
-        display: inline-block;
-        color: grey;
-        font-size: 13px;
-    }
-    
-    .card-info > ul > li:nth-of-type(1):after {
-        content: "\B7";
-        display: block;
-        float: right;
-        margin: 0 4px;
-    }
-    
-    .title-container {
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    .title-container>ul {
-        display: flex;
-    }
-    
-    .title-container>ul>li {
-        display: inline-block;
-        font-size: 16px;
-        color: #f42;
-        padding: 10px;
-    }
-    
-    .title-container>ul>li:after {
-        content: "|";
-        margin-left: 10px;
-        margin-right: 10px;
-        display: inline-block;
-        pointer-events: none;
-        position: absolute;
-    }
-    
     .fundings-container {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 20px;
     }
     
-    .funding {
-        position: relative;
-        width: 100%;
-        height: 300px;
-    }
-    
-    .funding>img {
-        position: absolute;
-        width: 60px;
-        height: 90px;
-        top: 0%;
-        left: 4%;
-    }
-    
-    .funding>* {
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-    
-    .funding>h4 {
-        background-color: rgb(255, 68, 34);
-        color: white;
-        font-size: 18px;
-        font-weight: 700;
-        padding-left: 84px;
-    }
     
     
     
-    .funding>div:nth-of-type(1) {
-        background-color: rgba(255, 68, 34, 0.08);
-    }
-    
-    .funding>div:nth-of-type(1)>* {
-        padding-left: 84px;
-    }
-    
-    .funding>div:nth-of-type(1)>h4 {
-        color: black;
-        font-size: 20px;
-        font-weight: 700;
-    }
-    
-    .funding>div:nth-of-type(1)>h5 {
-        color: rgb(85, 85, 85);
-        font-size: 12px;
-        font-weight: 400;
-    }
-    
-    .funding>div:nth-of-type(2) {
-        border-bottom-color: rgba(255, 68, 34, .25);
-        border-bottom-width: 1px;
-        border-bottom-style: solid;
-        background-color: rgba(255, 68, 34, .02);
-    }
     
     
-    .funding>div:nth-of-type(2)>* {
-        font-size: 15px;
-        color: rgb(85, 85, 85);
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
     
-    .funding>div:nth-of-type(3)>a {
-        font-size: 13px;
-        color: rgb(85, 85, 85);
-        display: block;
-    }
-    
-    .funding>div:nth-of-type(3)>a>span {
-        font-size: 13px;
-        color: rgb(170, 170, 170);
-        ;
-    }
-    
-    .funding>div:nth-of-type(2)>*,
-    .funding>div:nth-of-type(3)>* {
-        padding-left: 14px;
-        padding-right: 14px;
-    }
-    
-    .bookmark-icon {
-        width: 15px;
-        height: 15px;
-    }
-    
-    .briefcase-icon {
-        width: 15px;
-        height: 15px;
-    }
     
     .topics-section {
         display: grid;
@@ -364,172 +98,6 @@
         grid-gap: 10px;
         padding-left: 5px;
         padding-right: 5px;
-    }
-    
-    .topic {
-        padding: 8px;
-    }
-    
-    .topic-title {
-        margin-bottom: 14px;
-    }
-    
-    .topic-title>a {
-        color: #f42;
-        font-size: 28px;
-        font-weight: 700;
-        text-decoration: none;
-    }
-    
-    #topic-1 {
-        background: linear-gradient(360deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.05085784313725494) 100%), url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/06/moviepass-796x419.png') no-repeat;
-        background-size: 100% 100%;
-        background-size: cover;
-    }
-    
-    #topic-2 {
-        background: linear-gradient(360deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.05085784313725494) 100%), url(https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2019%2F10%2FApple-AirPods-Pro.jpg&signature=eeb60b2eb429f8a0afe01ba584eeebc9) no-repeat;
-        background-size: 100% 100%;
-    }
-    
-    #topic-3 {
-        background: linear-gradient(360deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.05085784313725494) 100%), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-...-2-1-796x417.png) no-repeat;
-        background-size: 100% 100%;
-    }
-    
-    #topic-4 {
-        background: linear-gradient(360deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.05085784313725494) 100%), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/GodfallTeaser04-796x448.png) no-repeat;
-        background-size: 100% 100%;
-    }
-    
-    #topic-5 {
-        background: linear-gradient(360deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.05085784313725494) 100%), url(https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F01%2F00-Cover-%E2%80%93-DataReportal-Digital-2020-Global-Digital-Overview-Slide-.png&signature=ce912041f4da99a588d52e58ac5f6c9a) no-repeat;
-        background-size: 100% 100%;
-    }
-    
-    #topic-6 {
-        background: linear-gradient(360deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.05085784313725494) 100%), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/paris-museums-15000-images-online-copyright-796x417.jpg) no-repeat;
-        background-size: 100% 100%;
-    }
-    
-    #topic-7 {
-        background: linear-gradient(360deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.05085784313725494) 100%), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Amazon-Prime-Fresh-delivery-hed-796x419.jpg) no-repeat;
-        background-size: 100% 100%;
-    }
-    
-    #topic-8 {
-        background: linear-gradient(360deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.05085784313725494) 100%), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/05/Google-Android-Developer-Options-796x417.jpg) no-repeat;
-        background-size: 100% 100%;
-    }
-    
-    .topic-header {
-        height: 250px;
-        width: 100%;
-        position: relative;
-    }
-    
-    .topic-header>div {
-        position: absolute;
-        bottom: 0;
-        padding: 14px;
-    }
-    
-    .topic-header>div>h5,
-    .topic-header>div>h3,
-    .topic-header>div>ul {
-        color: white;
-    }
-    
-    .topic-header>div>h5 {
-        font-weight: 400;
-    }
-    
-    .topic-header>div ul {
-        display: flex;
-        font-weight: 300;
-    }
-    
-    .topic-header>div ul>li {
-        display: inline-block;
-        font-weight: 300;
-        padding: 3px;
-    }
-    
-    .middle-topic {
-        color: #f42;
-        display: flex;
-        justify-content: space-between;
-        background-color: rgba(255, 68, 34, .06);
-    }
-    
-    .middle-topic>div:nth-of-type(1) {
-        padding: 15px;
-    }
-    
-    .middle-topic>div>h4>a {
-        color: #f42;
-        padding-right: 20px;
-        display: block;
-    }
-    
-    .middle-topic>div>h4>a:link {
-        text-decoration: none;
-        font-weight: 700;
-        margin-top: 5px;
-    }
-    
-    .middle-topic>div>h4>a:hover {
-        text-decoration: underline;
-    }
-    
-    .middle-topic>div>img {
-        width: 100px;
-        height: 100px;
-    }
-    
-    .topic-list>li {
-        border-bottom-color: rgb(85, 85, 85, 0.4);
-        border-bottom-width: 1px;
-        border-bottom-style: solid;
-        color: rgb(85, 85, 85);
-        font-size: 14px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
-    
-    .topic-list>li::before {
-        content: "\2022";
-        color: #f42;
-        font-weight: bold;
-        display: inline-block;
-        width: 1em;
-        margin-left: -1em;
-    }
-    
-    .title-container>span {
-        color: #f42;
-        margin-top: 10px;
-    }
-    
-    .last-price {
-        text-decoration: line-through;
-    }
-    
-    .footer {
-        color: white;
-    }
-    
-    .top-footer {
-        background-color: rgb(29, 29, 29);
-        padding: 2.5em 0;
-    }
-    
-    .social-icon {
-        width: 16px;
-        height: 16px;
-        display: block;
-        margin: 0 auto;
-        margin-top: 12px;
     }
     
     .top-footer>ul,
@@ -544,28 +112,6 @@
     .top-footer>ul>li {
         display: inline-block;
         margin-right: 10px;
-    }
-    
-    .top-footer>ul:first-of-type>li {
-        height: 40px;
-        width: 40px;
-        background-color: #333;
-        border-radius: 50%;
-        margin-bottom: 1.5em;
-    }
-    
-    .bottom-footer {
-        background-color: black;
-        padding-bottom: 25px;
-        padding-top: 25px;
-    }
-    
-    .footer-legal-logo {
-        height: 9px;
-    }
-    
-    .bottom-footer>ul>li>b {
-        color: #f42;
     }
 
     .tnw{
