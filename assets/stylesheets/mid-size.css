@@ -82,6 +82,11 @@
     padding: 12px;
   }
 
+  .tnw > img {
+    width: 90%;
+    margin-top: 30px;
+  }
+
   .card-container > div > img {
     width: 100%;
     margin-bottom: 8px;
@@ -129,10 +134,5 @@
     background: linear-gradient(to bottom right, #c09, #f42 85%);
     width: 80px;
     height: 80px;
-  }
-
-  .tnw > img {
-    width: 90%;
-    margin-top: 30px;
   }
 }

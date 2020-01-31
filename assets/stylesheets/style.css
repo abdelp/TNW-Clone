@@ -63,13 +63,41 @@
   cursor: pointer;
 }
 
-.topic-header > div > *:hover {
-  cursor: pointer;
+.events * {
+  max-width: 100%;
+}
+
+.funding > * {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .topic-list > li:hover {
   cursor: pointer;
   color: black;
+}
+
+.latest-section > h2,
+.title-container > h2 {
+  color: #f42;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.latest-section > h2:hover,
+.title-container > *:hover,
+.title-container > ul > li:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.events > *:hover {
+  cursor: pointer;
+}
+
+.topic-header > div > *:hover {
+  cursor: pointer;
 }
 
 .navbar-header > ul > li:hover {
@@ -106,19 +134,48 @@
   height: 1000px;
 }
 
-.events * {
-  max-width: 100%;
+.funding > img {
+  position: absolute;
+  width: 60px;
+  height: 90px;
+  top: 0%;
+  left: 15px;
 }
 
-.funding > * {
-  padding-top: 15px;
-  padding-bottom: 15px;
+.middle-topic > div > img {
+  width: 100px;
+  height: 100px;
+}
+
+.funding > h4 {
+  background-color: rgb(255, 68, 34);
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  padding-left: 84px;
 }
 
 .funding > h4:hover,
 .funding > img:hover,
 .funding > div > *:hover {
   cursor: pointer;
+}
+
+.funding > div:nth-of-type(1) > * {
+  padding-left: 84px;
+}
+
+.funding > div:nth-of-type(2) > * {
+  font-size: 15px;
+  color: rgb(85, 85, 85);
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.funding > div:nth-of-type(2) > *,
+.funding > div:nth-of-type(3) > * {
+  padding-left: 14px;
+  padding-right: 14px;
 }
 
 .funding > div:nth-of-type(2) > *:hover {
@@ -133,14 +190,6 @@
 
 .website-logo {
   height: 100px;
-}
-
-.latest-section > h2,
-.title-container > h2 {
-  color: #f42;
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 24px;
 }
 
 .event2 .event-data h2,
@@ -173,24 +222,9 @@
   padding: 5px;
 }
 
-.latest-section > h2:hover,
-.title-container > *:hover,
-.title-container > ul > li:hover {
-  cursor: pointer;
-  color: black;
-}
-
 .card-info > h5 {
   font-weight: 700;
   font-size: 16px;
-}
-
-.funding > img {
-  position: absolute;
-  width: 60px;
-  height: 90px;
-  top: 0%;
-  left: 15px;
 }
 
 .title-container > ul {
@@ -206,10 +240,6 @@
   font-weight: 300;
 }
 
-.events > *:hover {
-  cursor: pointer;
-}
-
 .topic-header > div > h5,
 .topic-header > div > h3,
 .topic-header > div > ul {
@@ -218,11 +248,6 @@
 
 .topic-header > div > h5 {
   font-weight: 400;
-}
-
-.middle-topic > div > img {
-  width: 100px;
-  height: 100px;
 }
 
 .card-container > div > img:hover,
@@ -254,14 +279,6 @@
   height: 300px;
 }
 
-.funding > h4 {
-  background-color: rgb(255, 68, 34);
-  color: white;
-  font-size: 18px;
-  font-weight: 700;
-  padding-left: 84px;
-}
-
 .topic-header > div {
   position: absolute;
   bottom: 0;
@@ -270,10 +287,6 @@
 
 .funding > div:nth-of-type(1) {
   background-color: rgba(255, 68, 34, 0.08);
-}
-
-.funding > div:nth-of-type(1) > * {
-  padding-left: 84px;
 }
 
 .funding > div:nth-of-type(1) > h4 {
@@ -295,13 +308,6 @@
   background-color: rgba(255, 68, 34, 0.02);
 }
 
-.funding > div:nth-of-type(2) > * {
-  font-size: 15px;
-  color: rgb(85, 85, 85);
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
 .funding-footer > a {
   font-size: 13px;
   color: rgb(85, 85, 85);
@@ -311,12 +317,6 @@
 .funding-footer > a > span {
   font-size: 13px;
   color: rgb(170, 170, 170);
-}
-
-.funding > div:nth-of-type(2) > *,
-.funding > div:nth-of-type(3) > * {
-  padding-left: 14px;
-  padding-right: 14px;
 }
 
 .bookmark-icon {
@@ -483,5 +483,3 @@
 .bottom-footer > ul > li > b {
   color: #f42;
 }
-
-
